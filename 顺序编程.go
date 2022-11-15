@@ -113,12 +113,22 @@ func main() {
     fmt.Println(i,j)
     // 查看变量类型，同时还有reflect方法
     fmt.Printf("%T\n",c1)
+    // printf与c语言差不多
     var cc rune = 'c'
     fmt.Printf("%T\n",cc)  // rune实则为int32类型
 
     //强制类型转换
     v12=int(v11)
-    
-
+    // 字符串内容布恩那个在初始化后被修改
+    //name[0]="x" 报错： cannot assign to name[0] (value of type byte)
+    // 内置函数len
+    fmt.Println(len(name))
+    fmt.Println(i)
+    for i:=0;i<2;i++{
+        fmt.Println("hehe")
+    }
+    for i:=0;i<2;i++{
+        fmt.Println("hehe")
+    }
 
 }
